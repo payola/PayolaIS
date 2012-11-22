@@ -1,0 +1,10 @@
+﻿@using Payola.Resources;
+
+@model Enum
+ 
+@{ 
+    string key = Model.GetType ().Name + Model.ToString ();
+    string text = Resources.ResourceManager.GetString (key) ?? Model.ToString ();
+}
+
+@text

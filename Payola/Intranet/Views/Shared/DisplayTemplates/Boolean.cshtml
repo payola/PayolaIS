@@ -1,0 +1,12 @@
+﻿@using Payola.Resources;
+
+@model bool?
+           
+@if (Model.HasValue)
+{
+    @Resources.ResourceManager.GetString(Model.Value ? "Yes" : "No")   
+}
+else
+{
+    @:-   
+}

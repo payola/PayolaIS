@@ -1,0 +1,30 @@
+﻿@using Payola.Resources
+
+@model object
+           
+@{
+    var properties = ViewData.ModelMetadata.Properties.Where (p => p.ShowForEdit && !ViewData.TemplateInfo.Visited (p));
+}
+
+@Html.ValidationMessage(String.Empty)
+<table cellspacing="0" class="full-width">
+    @foreach (var property in properties) 
+    {
+        if (!property.IsReadOnly)
+        {
+            <tr>
+                <td>
+                    @Resources.ResourceManager.GetString(property.PropertyName)
+                    @if (property.IsRequired)
+                    {
+                        @:*
+                    }
+                </td>
+                <td>
+                    @Html.Editor(property.PropertyName)
+                    @Html.ValidationMessage(property.PropertyName)
+                </td>
+            </tr>
+        }
+    }
+</table>

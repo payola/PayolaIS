@@ -1,0 +1,13 @@
+﻿@using Payola.Resources;
+
+@model Payola.DomainModel.Entity
+           
+@RenderBody()
+           
+@if (!String.IsNullOrWhiteSpace (Model.Note))
+{
+    <div class="tit note">
+        <h6>@Resources.Note</h6>
+        <p>@Html.DisplayFor(e => e.Note)</p>
+    </div>
+}

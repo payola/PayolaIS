@@ -1,0 +1,15 @@
+tocTab[tocTab.length] = new Array("3.4:1", "", "Události", "EARoot/EA3/EA4/EA179.htm", "180.png", "32", "0", "", "Use Case diagram0","{E9BE9EB8-A746-4874-8B35-FCD2C2ADAFA5}");
+tocTab[tocTab.length] = new Array("3.4:2", "", "Editace události", "EARoot/EA3/EA4/EA181.htm", "7.png", "218", "0", "", "UseCase0","{5D960D1B-5244-49cf-AB40-354FEB95C599}");
+tocTab[tocTab.length] = new Array("3.4:3", "", "Odebrání informace z události", "EARoot/EA3/EA4/EA182.htm", "7.png", "338", "0", "", "UseCase0","{D747CA23-8383-4fe3-9F3B-B149D31930A6}");
+tocTab[tocTab.length] = new Array("3.4:4", "", "Odebrání zprávy od události", "EARoot/EA3/EA4/EA183.htm", "7.png", "186", "0", "", "UseCase0","{9F418D30-5ED1-4b08-8251-962492D73C01}");
+tocTab[tocTab.length] = new Array("3.4:5", "", "Označení informací k události publikovaných ve zprávě", "EARoot/EA3/EA4/EA184.htm", "7.png", "498", "0", "", "UseCase0","{5DB3F843-087B-49ef-932C-A7670EE430C0}");
+tocTab[tocTab.length] = new Array("3.4:6", "", "Publikace události", "EARoot/EA3/EA4/EA185.htm", "7.png", "672", "0", "", "UseCase0","{6B481435-4F3E-477a-98F2-656F1F719DFB}");
+tocTab[tocTab.length] = new Array("3.4:7", "", "Přidání informace k události", "EARoot/EA3/EA4/EA186.htm", "7.png", "337", "0", "", "UseCase0","{FF9DA866-CA3D-4a57-9D52-2218D949E729}");
+tocTab[tocTab.length] = new Array("3.4:8", "", "Přidání zprávy k události", "EARoot/EA3/EA4/EA187.htm", "7.png", "183", "0", "", "UseCase0","{3EAC5DC1-8B3A-41e6-84BC-2F98D028B28F}");
+tocTab[tocTab.length] = new Array("3.4:9", "", "Smazání události", "EARoot/EA3/EA4/EA188.htm", "7.png", "188", "0", "", "UseCase0","{59C5941D-3EEB-4dd4-BEEF-580AF489A9CD}");
+tocTab[tocTab.length] = new Array("3.4:10", "", "Uzavření události", "EARoot/EA3/EA4/EA189.htm", "7.png", "155", "0", "", "UseCase0","{35E028C4-5A79-4a4b-B761-8214691FE9FC}");
+tocTab[tocTab.length] = new Array("3.4:11", "", "Vyhledání události", "EARoot/EA3/EA4/EA190.htm", "7.png", "153", "0", "", "UseCase0","{6DB481A2-791B-4013-8274-C0A98638D02A}");
+tocTab[tocTab.length] = new Array("3.4:12", "", "Založení nové události", "EARoot/EA3/EA4/EA191.htm", "7.png", "150", "0", "", "UseCase0","{14400E55-65A0-4f5b-8093-093B5ED9C0D1}");
+tocTab[tocTab.length] = new Array("3.4:13", "", "Zobrazení detailu události", "EARoot/EA3/EA4/EA192.htm", "7.png", "151", "0", "", "UseCase0","{3C1B3C46-5678-4d76-AD69-71A489A0F487}");
+tocTab[tocTab.length] = new Array("3.4:14", "", "Zobrazení informací k události", "EARoot/EA3/EA4/EA193.htm", "7.png", "178", "0", "", "UseCase0","{FDA7B688-60B4-41f9-8A66-4638E0D352E3}");
+tocTab[tocTab.length] = new Array("3.4:15", "", "Zobrazení zpráv o události", "EARoot/EA3/EA4/EA194.htm", "7.png", "185", "0", "", "UseCase0","{105B4447-8896-4471-987D-1F1A7D4F961A}");

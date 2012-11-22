@@ -1,0 +1,34 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Payola.DomainModel.Address
+
+@{
+    Layout = "~/Views/Shared/DisplayTemplates/Entity.cshtml";    
+}
+
+<p>
+    <strong>@Resources.Street:</strong>
+    @Html.DisplayFor(i => i.Street)
+</p>
+<p>
+    <strong>@Resources.LandRegistryNumber:</strong>
+    @Html.DisplayFor(i => i.LandRegistryNumber)
+</p>
+<p>
+    <strong>@Resources.HouseNumber:</strong>
+    @Html.DisplayFor(i => i.HouseNumber)
+</p>
+<p>
+    <strong>@Resources.City:</strong>
+    @Html.DisplayFor(i => i.City)
+</p>
+<p>
+    <strong>@Resources.PostalCode:</strong>
+    @Html.DisplayFor(i => i.PostalCode)
+</p>
+<p>
+    <strong>@Resources.Country:</strong>
+    @Html.DisplayFor(i => i.Country)
+</p>
+  

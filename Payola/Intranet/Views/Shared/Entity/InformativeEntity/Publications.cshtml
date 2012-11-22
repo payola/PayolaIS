@@ -1,0 +1,40 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model InformativeEntity
+
+@{
+    string entityTypeName = (string) ViewBag.EntityTypeName;
+    object routeValues = new { Id = Model.Id };
+}
+
+@section SubMenu
+{
+    <li class="create">@Html.ActionLink(Resources.ResourceManager.GetString ("Create" + entityTypeName), "Create")</li>
+    <li id="submenu-active">
+        @Html.ActionLink(Resources.ResourceManager.GetString(entityTypeName), "Detail", routeValues)
+        <ul>
+            <li class="back">@Html.ActionLink(Resources.BackToDetail, "Detail", routeValues)</li>
+        </ul>
+    </li>
+}
+
+<h3 class="tit @ViewBag.EntityTypeName">
+    @Resources.ResourceManager.GetString("PublicationsOf" + entityTypeName)
+    @Model.Identification
+</h3>
+
+@foreach (Publication publication in Model.Publications.OrderByDescending (p => p.Date))
+{
+    <h4 class="tit">
+        @publication.Date
+        @if (!String.IsNullOrWhiteSpace (publication.Place))
+        {
+            @:-
+            @publication.Place
+        }
+    </h4>
+    <p>
+        @publication.Description
+    </p>
+}

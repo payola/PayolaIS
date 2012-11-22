@@ -1,0 +1,27 @@
+﻿@using System.Linq;
+@using System.Collections;
+@using Payola.Resources;
+
+@model IEnumerable
+
+@{
+    Type enumType = Model.GetType ().GetGenericArguments ()[0];
+    
+    HashSet<string> selectedValues = new HashSet<string> ();
+    foreach (object selectedValue in Model)
+    {
+        selectedValues.Add (selectedValue.ToString ());   
+    }
+    
+    List<SelectListItem> items = new List<SelectListItem> ();
+    foreach (string name in Enum.GetNames (enumType))
+    {
+        string value = Enum.Parse (enumType, name).ToString ();
+        items.Add (new SelectListItem {
+            Text = Resources.ResourceManager.GetString (enumType.Name + name) ?? name,
+            Value = value,
+        });
+    }
+}
+
+@Html.ListBox(String.Empty, new MultiSelectList (items, "Value", "Text", selectedValues), new { Size = 6, Multiple = "multiple" })

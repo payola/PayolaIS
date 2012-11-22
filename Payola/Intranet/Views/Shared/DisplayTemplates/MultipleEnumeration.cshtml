@@ -1,0 +1,22 @@
+﻿@using System.Collections;
+@using Payola.Resources;
+
+@model ICollection
+
+@if (Model != null && Model.Count > 0)
+{
+    bool firstItem = true;
+    foreach (object item in Model)
+    {
+        if (!firstItem)
+        {
+            @:|
+        }
+        @Html.DisplayFor(m => item, "Enumeration")
+        firstItem = false;
+    }
+}
+else
+{
+    @Resources.NotSpecified
+}

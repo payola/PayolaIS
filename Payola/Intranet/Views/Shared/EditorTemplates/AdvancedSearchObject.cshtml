@@ -1,0 +1,25 @@
+﻿@using Payola.Resources
+
+@model object
+           
+@{
+    var properties = ViewData.ModelMetadata.Properties.Where (p => p.ShowForEdit && !ViewData.TemplateInfo.Visited (p));
+}
+
+<table cellspacing="0" class="full-width">
+    @foreach (var property in properties) 
+    {
+        if (!property.IsReadOnly && (property.DataTypeName == "Text" || property.DataTypeName == "MultilineText" ||
+            property.DataTypeName == "EmailAddress"))
+        {
+            <tr>
+                <td>
+                    @Resources.ResourceManager.GetString(property.PropertyName)
+                </td>
+                <td>
+                    @Html.Editor(property.PropertyName, "Text")
+                </td>
+            </tr>
+        }
+    }
+</table>

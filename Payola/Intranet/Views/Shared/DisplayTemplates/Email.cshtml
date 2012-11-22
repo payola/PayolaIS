@@ -1,0 +1,15 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources
+
+@model Payola.DomainModel.Email
+           
+
+@{
+    Layout = "~/Views/Shared/DisplayTemplates/Entity.cshtml";    
+}
+
+<p>
+    <strong>@Resources.EmailAddress:</strong>
+    @Html.DisplayFor(i => i.Address)
+</p>
+

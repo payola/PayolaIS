@@ -1,0 +1,32 @@
+﻿@using Payola.Resources;
+
+@model Payola.Intranet.Models.ViewModels.EntityEditViewModel
+
+@{
+    string entityTypeName = (string) ViewBag.EntityTypeName;
+    object routeValues = new { Id = Model.Entity.Id };
+}
+
+@section SubMenu
+{
+    <li class="search">@Html.ActionLink(Resources.AdvancedSearch, "AdvancedSearch")</li>
+    <li class="create">@Html.ActionLink(Resources.ResourceManager.GetString ("Create" + entityTypeName), "Create")</li>
+    <li id="submenu-active">
+        @Html.ActionLink(Resources.ResourceManager.GetString(entityTypeName), "Detail", routeValues)
+        <ul>
+            <li class="back">@Html.ActionLink(Resources.BackToDetail, "Detail", routeValues)</li>
+        </ul>
+    </li>
+}
+
+<h3 class="tit @ViewBag.EntityTypeName">
+    @Model.Identification
+</h3>
+
+@using (Html.BeginForm ()) 
+{
+    @Html.EditorFor(m => m.Entity)
+    <p>
+        <input type="submit" value="@Resources.SaveChanges" class="input-submit" />
+    </p>
+}

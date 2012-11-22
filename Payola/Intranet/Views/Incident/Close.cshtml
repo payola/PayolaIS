@@ -1,0 +1,37 @@
+﻿@using Payola.Resources;
+
+@model Payola.DomainModel.Incident
+
+@section SubMenu
+{
+    <li class="create">@Html.ActionLink(Resources.CreateIncident, "Create")</li>
+    <li id="submenu-active">
+        @Html.ActionLink(Resources.Incident, "Detail", new { Id = Model.Id })
+        <ul>
+            <li class="back">@Html.ActionLink(Resources.BackToDetail, "Detail", new { Id = Model.Id })</li>
+        </ul>
+    </li>
+}
+
+<h3 class="tit Incident">
+    @Resources.ClosingIncident
+    @Model.Identification
+</h3>
+
+@using (Html.BeginForm ()) 
+{
+    @Html.HiddenFor(m => m.Id)
+    <table cellspacing="0">
+        <tr>
+            <td>
+                @Resources.EnclosureDescription
+            </td>
+            <td>
+                @Html.EditorFor(m => m.EnclosureDescription)
+            </td>
+        </tr>
+    </table>
+    <p>
+        <input type="submit" value="@Resources.Close" class="input-submit" />
+    </p>
+}

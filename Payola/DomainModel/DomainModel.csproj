@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{038F3704-9BC7-4DC5-B5CF-B99AD70B3FA8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Payola.DomainModel</RootNamespace>
+    <AssemblyName>Payola.DomainModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entity\InformativeEntity\Incident\IncidentRegion.cs" />
+    <Compile Include="Entity\InformativeEntity\Incident\Region.cs" />
+    <Compile Include="Entity\InformativeEntity\Incident\IncidentField.cs" />
+    <Compile Include="Entity\Keyword.cs" />
+    <Compile Include="Entity\InformativeEntity\Incident\Field.cs" />
+    <Compile Include="Entity\InformativeEntity\Information\Credibility.cs" />
+    <Compile Include="Entity\InformativeEntity\Information\Source.cs" />
+    <Compile Include="Entity\Address\Country.cs" />
+    <Compile Include="Entity\Person\Nationality.cs" />
+    <Compile Include="Entity\InformativeEntity.cs" />
+    <Compile Include="Entity\InformativeEntity\Publication.cs" />
+    <Compile Include="Entity\Person\PersonCitizenship.cs" />
+    <Compile Include="Entity\InformativeEntity\Incident\Location.cs" />
+    <Compile Include="Entity\StbDivision.cs" />
+    <Compile Include="Relation.cs" />
+    <Compile Include="Entity\Address.cs" />
+    <Compile Include="Entity\Company.cs" />
+    <Compile Include="Entity\InformativeEntity\Report.cs" />
+    <Compile Include="Entity\InformativeEntity\Incident.cs" />
+    <Compile Include="Entity\InformativeEntity\Incident\IncidentState.cs" />
+    <Compile Include="Entity\InformativeEntity\Information.cs" />
+    <Compile Include="Entity\InformativeEntity\Information\InformationState.cs" />
+    <Compile Include="Entity\Person.cs" />
+    <Compile Include="Entity\Person\MaritalStatus.cs" />
+    <Compile Include="Entity\Person\Sex.cs" />
+    <Compile Include="Entity\Phone.cs" />
+    <Compile Include="Entity\Email.cs" />
+    <Compile Include="Entity\InformativeEntity\Report\ReportState.cs" />
+    <Compile Include="Entity\InformativeEntity\Report\ReportKind.cs" />
+    <Compile Include="Entity\Vehicle.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relation\PredefinedRelationTypeId.cs" />
+    <Compile Include="Relation\RelationProperties.cs" />
+    <Compile Include="Relation\PredefinedRelationType.cs" />
+    <Compile Include="Relation\PredefinedRelationAttribute.cs" />
+    <Compile Include="Relation\RelationType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Resources\Resources.csproj">
+      <Project>{41B28468-EFD4-45D8-A362-D0BDBD312E9B}</Project>
+      <Name>Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(SolutionDir)..\Tools\StyleCop\v4.4\Microsoft.StyleCop.Targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(SolutionDir)..\Tools\Microsoft Fxcop 10.0\FxCopCmd.exe" /project:"$(ProjectDir)$(ProjectName).FxCop" /console</PostBuildEvent>
+  </PropertyGroup>
+</Project>

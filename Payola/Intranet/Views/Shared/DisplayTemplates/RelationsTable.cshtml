@@ -1,0 +1,92 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Dictionary<Relation, Entity>
+
+@if (Model.Any ())
+{
+    Entity entity = (Entity) ViewBag.Entity;
+    RelationType relationType = (RelationType) ViewBag.RelationType;
+    
+    bool hasDetail = relationType.ObjectiveEntityTypeName != typeof (Keyword).Name;
+    bool hasProperties = !(relationType is PredefinedRelationType);
+    bool isEditable = entity.IsEditable;
+    int actionColumnCount = (hasDetail ? 1 : 0) + (hasProperties && isEditable ? 1 : 0) + (isEditable ? 1 : 0);
+
+    <table cellspacing="0" class="full-width">
+        <tr>
+            @if (actionColumnCount > 0)
+            {
+                <th colspan="@actionColumnCount">
+                    @Resources.Action
+                </th>
+            }
+            <th>
+                @Resources.ResourceManager.GetString(relationType.ObjectiveEntityTypeName)
+            </th>
+            @if (hasProperties)
+            {
+                <th>
+                    @Resources.ValidFrom
+                </th>
+                <th>
+                    @Resources.ValidTo
+                </th>
+                <th>
+                    @Resources.Note
+                </th>
+            }
+        </tr>
+        @foreach (KeyValuePair<Relation, Entity> pair in Model)
+        {
+            Relation relation = pair.Key;
+            Entity relatedEntity = pair.Value;
+            <tr>
+                @if (hasDetail)
+                {
+                    <td class="detail">
+                        @Html.ActionLink(Resources.Detail, "Detail", relationType.ObjectiveEntityTypeName, 
+                            new { Id = relatedEntity.Id }, null)
+                    </td>
+                }
+                @if (hasProperties && isEditable)
+                {
+                    <td class="edit">
+                        @Html.ActionLink(Resources.Edit, "EditRelation", new 
+                        {
+                            RelationTypeId = relationType.Id,
+                            RelationId = relation.Id,
+                            EntityId = entity.Id
+                        })
+                    </td>
+                }
+                @if (isEditable)
+                {
+                    <td class="delete">
+                        @Html.ActionLink(Resources.Delete, "DeleteRelation", new 
+                        {
+                            RelationTypeId = relationType.Id,
+                            EntityId = entity.Id,
+                            RelationId = (relationType is PredefinedRelationType) ? relatedEntity.Id : relation.Id
+                        })
+                    </td>
+                }
+                <td>
+                    @relatedEntity.Identification
+                </td>
+                @if (hasProperties)
+                {
+                    <td>
+                        @relation.ValidFrom
+                    </td>
+                    <td>
+                        @relation.ValidTo
+                    </td>
+                    <td>
+                        @relation.Note
+                    </td>
+                }
+            </tr>
+        }
+    </table>
+}

@@ -1,0 +1,69 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Payola.DomainModel.Person
+           
+@{
+    Layout = "~/Views/Shared/DisplayTemplates/Entity.cshtml";    
+}
+
+@if (!String.IsNullOrWhiteSpace (Model.BirthDate))
+{
+    <p>
+        <span class="date"><strong>@Resources.BirthDate:</strong>
+            @Html.DisplayFor(p => p.BirthDate)
+        </span>
+    </p>
+}
+@if (Model.PersonalIdentificationNumber.HasValue)
+{
+    <p>
+        <strong>@Resources.PersonalIdentificationNumber:</strong>
+        @Html.DisplayFor(p => p.PersonalIdentificationNumber)
+    </p>
+}
+<p>
+    <strong>@Resources.Sex:</strong>
+    @Html.DisplayFor(p => p.Sex)
+</p>
+<p>
+    <strong>@Resources.FirstName:</strong>
+    @Html.DisplayFor(p => p.FirstName)
+</p>
+<p>
+    <strong>@Resources.Surname:</strong>
+    @Html.DisplayFor(p => p.Surname)
+</p>
+@if (!String.IsNullOrWhiteSpace (Model.BirthSurname))
+{
+    <p>
+        <strong>@Resources.BirthSurname:</strong>
+        @Html.DisplayFor(p => p.BirthSurname)
+    </p>
+}
+<p>
+    <strong>@Resources.MaritalStatus:</strong>
+    @Html.DisplayFor(p => p.MaritalStatus)
+</p>
+@if (!String.IsNullOrWhiteSpace (Model.DegreesAheadName))
+{
+    <p>
+        <strong>@Resources.DegreesAheadName:</strong>
+        @Html.DisplayFor(p => p.DegreesAheadName)
+    </p>
+}
+@if (!String.IsNullOrWhiteSpace (Model.DegreesBehindName))
+{
+    <p>
+        <strong>@Resources.DegreesBehindName:</strong>
+        @Html.DisplayFor(p => p.DegreesBehindName)
+    </p>
+}
+<p>
+    <strong>@Resources.Nationality:</strong>
+    @Html.DisplayFor(p => p.Nationality)
+</p>
+<p>
+    <strong>@Resources.Citizenships:</strong>
+    @Html.DisplayFor(p => p.Citizenships)
+</p>

@@ -1,0 +1,14 @@
+﻿@model string
+
+@{
+    bool isFirstParagraph = true;
+}
+@foreach (string paragraph in Model.Split (new string[] { System.Environment.NewLine }, StringSplitOptions.None))
+{
+    if (!isFirstParagraph)
+    {
+        <br />
+    }
+    @paragraph
+    isFirstParagraph = false;
+}

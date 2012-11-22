@@ -1,0 +1,34 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Payola.DomainModel.Vehicle
+           
+@{
+    Layout = "~/Views/Shared/DisplayTemplates/Entity.cshtml";    
+}
+
+<p>
+    <strong>@Resources.LicenseNumber:</strong>
+    @Html.DisplayFor(i => i.LicenseNumber)
+</p>
+@if (!String.IsNullOrWhiteSpace(Model.Color))
+{
+    <p>
+        <strong>@Resources.Color:</strong>
+        @Html.DisplayFor(i => i.Color)
+    </p>
+}
+@if (!String.IsNullOrWhiteSpace(Model.Brand))
+{
+    <p>
+        <strong>@Resources.Brand:</strong>
+        @Html.DisplayFor(i => i.Brand)
+    </p>
+}
+@if (!String.IsNullOrWhiteSpace(Model.Manufacturer))
+{
+    <p>
+        <strong>@Resources.Manufacturer:</strong>
+        @Html.DisplayFor(i => i.Manufacturer)
+    </p>
+}

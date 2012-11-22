@@ -1,0 +1,10 @@
+﻿@model Payola.DomainModel.Entity
+
+@foreach (ModelMetadata property in (IEnumerable<ModelMetadata>) ViewBag.PropertyMetadatas)
+{
+    <td>
+        <div class="display-field">
+            @Html.Display(property.PropertyName)
+        </div>
+    </td>
+}

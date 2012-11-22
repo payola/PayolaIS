@@ -1,0 +1,39 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Payola.DomainModel.Report
+           
+@{
+    Layout = "~/Views/Shared/DisplayTemplates/Entity.cshtml";
+}
+
+<p>
+    <span class="date insert"><strong>@Resources.InsertionDate:</strong>
+        @Html.DisplayFor(r => r.InsertionDate)
+    </span>
+</p>
+<p>
+    <strong>@Resources.Kind:</strong>
+    @Html.DisplayFor(i => i.Kind)
+</p>
+@if (!String.IsNullOrWhiteSpace (Model.Annotation))
+{
+    <div class="tit annotation">
+        <h6>@Resources.Annotation</h6>
+        <p>@Html.DisplayFor(r => r.Annotation)</p>
+    </div>
+}
+@if (!String.IsNullOrWhiteSpace (Model.Text))
+{
+    <div class="tit text">
+        <h6>@Resources.Text</h6>
+        <p>@Html.DisplayFor(r => r.Text)</p>
+    </div>
+}
+@if (!String.IsNullOrWhiteSpace (Model.Comment))
+{
+    <div class="tit comment">
+        <h6>@Resources.Comment</h6>
+        <p>@Html.DisplayFor(r => r.Comment)</p>
+    </div>
+}

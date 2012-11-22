@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("2:1", "", "DB", "EARoot/EA2/EA132.htm", "175.png", "57", "0", "", "Logical diagram0","{86963057-4673-432f-BEBA-B8ADEE5040AB}");
+tocTab[tocTab.length] = new Array("2:2", "", "«table» Event", "EARoot/EA2/EA134.htm", "28.png", "401", "0", "", "Class0","{8C79B6F1-4CA1-4691-B11C-F064AA46DD50}");
+tocTab[tocTab.length] = new Array("2:3", "", "«table» EventInformation", "EARoot/EA2/EA135.htm", "28.png", "405", "0", "", "Class0","{30049ACF-6406-43d2-8D69-8D74A821A617}");
+tocTab[tocTab.length] = new Array("2:4", "", "«table» EventLocation", "EARoot/EA2/EA136.htm", "28.png", "402", "0", "", "Class0","{472DBB25-7A8A-4506-A289-99FD5539F61D}");
+tocTab[tocTab.length] = new Array("2:5", "", "«table» Information", "EARoot/EA2/EA137.htm", "28.png", "404", "0", "", "Class0","{0629F885-3A62-474e-A938-B251325EB8EB}");
+tocTab[tocTab.length] = new Array("2:6", "", "«table» Location", "EARoot/EA2/EA138.htm", "28.png", "403", "0", "", "Class0","{5BB66F68-5977-44c5-A330-44684EF3A013}");

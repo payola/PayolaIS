@@ -1,0 +1,414 @@
+﻿html, body { padding: 0; margin: 0; }
+.full-width-hack { padding-right: 20px; }
+
+.right{ text-align: right; }
+
+.date 
+{
+    display: block;
+    padding: 0 5px 0 21px;
+    background: url(fugue/calendar.png) top left no-repeat;
+}
+
+.date.insert{ background-image: url(fugue/calendar--plus.png); }
+.date.acquire{ background-image: url(fugue/calendar--pencil.png); }
+.date.delete{ background-image: url(fugue/calendar--minus.png); }
+
+.publishable-false {
+    padding-left: 20px;
+    background-image: url(fugue/home.png);
+    background-repeat: no-repeat;
+}
+.publishable-true {
+    padding-left: 20px;
+    background-image: url(fugue/globe.png);
+    background-repeat: no-repeat;
+}
+
+div.annotation, div.text, div.comment, div.note
+{
+    margin: 10px 0;
+}
+
+div.annotation p, div.text p, div.comment p, div.note p
+{
+    margin: 0;
+}
+
+div.annotation h6, div.text h6, div.comment h6, div.note h6
+{
+    padding: 0 0 5px 26px;
+    margin: 0;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+div.annotation h6
+{
+    background-image: url(fugue/selection-select-input.png);
+}
+div.text h6 
+{
+    background-image: url(fugue/report-paper.png);
+}
+div.comment h6
+{
+    background-image: url(fugue/balloon.png);
+}
+div.note h6 
+{
+    background-image: url(fugue/sticky-note.png);
+}
+
+.person, .Person {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-image: url(fugue/bonus/icons-24/user.png);
+}
+.male {
+    background-image: url(fugue/bonus/icons-24/user.png);
+}
+.female {
+    background-image: url(fugue/bonus/icons-24/user-female.png);
+}
+
+.information, .Information {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-image: url(fugue/bonus/icons-24/information.png);
+}
+
+.incident, .Incident {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-image: url(fugue/bonus/icons-24/briefcase.png);
+}
+
+.report, .Report {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-image: url(fugue/bonus/icons-24/newspaper.png);
+}
+
+.company, .Company {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-image: url(fugue/bonus/icons-24/store.png);
+}
+
+.address, .Address {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-image: url(fugue/bonus/icons-24/card-address.png);
+}
+
+.vehicle, .Vehicle {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-image: url(fugue/car.png);
+}
+
+.phone, .Phone {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-image: url(fugue/bonus/icons-24/mobile-phone.png);
+}
+
+.email, .Email {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-image: url(fugue/bonus/icons-24/address-book-blue.png);
+}
+
+.Stbdivision, .StbDivision {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-image: url(fugue/bonus/icons-24/folder-Stb.png);
+}
+
+.keyword, .Keyword {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-image: url(fugue/bonus/icons-24/tag.png);
+}
+
+.publication, .Publication {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-image: url(fugue/bonus/icons-24/globe.png);
+}
+
+td a
+{
+    display: block;
+    min-height: 16px;
+}
+
+td.detail a
+{
+    text-indent: -5000em;
+    background-image: url(fugue/magnifier-zoom-in.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+td.edit a
+{
+    text-indent: -5000em;
+    background-image: url(fugue/pencil.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+td.delete a
+{
+    text-indent: -5000em;
+    background-image: url(fugue/cross.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+#aside ul li a 
+{
+    /* 185 - (15 - 15) - (40 - 15) = 160 */
+    width: 160px !important; 
+    padding: 9px 15px 7px 40px !important;
+    background-position: 15px 10px !important;
+    vertical-align: middle;
+}
+
+#aside ul li a:hover
+{
+    background-position: 11px 6px !important;
+}
+
+#aside ul li#submenu-active a, #aside ul li#submenu-active a:hover
+{
+    width: 198px !important;
+    padding: 5px 15px 3px !important;
+    background-position: 100% 50% !important;
+}
+
+#aside ul ul li a, #aside ul ul li a:hover, #aside ul li#submenu-active ul li a, #aside ul li#submenu-active ul li a:hover
+{
+    /* 185 - (15 - 15) - (50 - 15) = 150 */
+    width: 150px !important; 
+    padding: 9px 15px 7px 50px !important;
+    background-position: 25px 10px !important;
+    height: 19px;
+    font-size: 100%;
+}
+
+#aside ul ul li a:hover, #aside ul li#submenu-active ul li a:hover
+{
+    background-position: 20px 6px !important;
+}
+
+li.create a
+{
+    background-image: url(fugue/plus.png)  !important;
+    background-repeat: no-repeat !important;
+}
+
+li.create a:hover
+{
+    background-image: url(fugue/bonus/icons-24/plus.png)  !important;
+}
+
+li.search a
+{
+    background-image: url(fugue/magnifier-left.png)  !important;
+    background-repeat: no-repeat !important;
+}
+
+li.search a:hover
+{
+    background-image: url(fugue/bonus/icons-24/magnifier-left.png)  !important;
+}
+
+li.publish a
+{
+    background-image: url(fugue/globe.png) !important;
+}
+
+li.publish a:hover
+{
+    background-image: url(fugue/bonus/icons-24/globe.png) !important;
+}
+
+li.table a
+{
+    background-image: url(fugue/table.png) !important;
+}
+
+li.table a:hover
+{
+    background-image: url(fugue/bonus/icons-24/table.png) !important;
+}
+
+li.edit a
+{
+    background-image: url(fugue/pencil.png) !important;
+}
+
+li.edit a:hover
+{
+    background-image: url(fugue/bonus/icons-24/pencil.png) !important;
+}
+
+li.delete a
+{
+    background-image: url(fugue/cross.png) !important;
+}
+
+li.delete a:hover
+{
+    background-image: url(fugue/bonus/icons-24/cross.png) !important;
+}
+
+li.folder a
+{
+    background-image: url(fugue/folder.png) !important;
+}
+
+li.folder a:hover
+{
+    background-image: url(fugue/bonus/icons-24/folder.png) !important;
+}
+
+li.folder-open a
+{
+    background-image: url(fugue/folder-open.png) !important;
+}
+
+li.folder-open a:hover
+{
+    background-image: url(fugue/bonus/icons-24/folder-open.png) !important;
+}
+
+li.back a
+{
+    background-image: url(fugue/arrow-180.png) !important;
+}
+
+li.back a:hover
+{
+    background-image: url(fugue/bonus/icons-24/arrow-180.png) !important;
+}
+
+.rightcol
+{
+    margin-left: 10px;
+}
+
+.rightcol ul{ padding-left: 10px; }
+
+#tray
+{
+    padding: 8px 15px 6px;  
+}
+
+#aside.empty
+{
+    width: 0px !important;
+    min-height: 1px;
+}
+
+.top5
+{
+    border: 1px solid #cfcfcf;
+    margin-bottom: 15px;
+}
+
+.top5 .tit
+{
+    margin: 0 !important;
+}
+
+h3.tit span
+{
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+
+.publications p
+{
+    margin: 15px;
+}
+
+form table
+{
+    width: 600px !important;
+}
+
+input, select, textarea
+{
+    font: 14px/18px 'Helvetica', 'Arial', 'sans-serif';
+}
+
+td .text-box
+{
+    width: 98%;
+    max-height: 250px;
+}
+
+.incident-closed
+{
+    padding: 10px 10px 10px 44px;
+    font-weight: bold;
+    background: url(fugue/bonus/icons-24/box.png) #DF0000 no-repeat 10px center;
+    color: white;
+    margin: 10px 0;
+}
+
+.incident-closed p
+{
+    margin: 0;
+}
+
+.field-validation-error
+{
+    color: red;
+    display: block;
+    padding: 5px 20px;
+    background: url(fugue/exclamation.png) no-repeat 0px 5px;
+    font-weight: bold;
+}
+
+td { vertical-align: top; }
+
+.full-width{ width: 100% !important; }
+
+
+.ui-timepicker-div .ui-widget-header{ margin-bottom: 8px; }
+.ui-timepicker-div dl{ text-align: left; }
+.ui-timepicker-div dl dt{ height: 25px; }
+.ui-timepicker-div dl dd{ margin: -25px 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+
+#content ul.chzn-results li, #content ul.chzn-choices li
+{
+    background-image: none !important;    
+}
+
+#content td ul.chzn-choices a
+{
+    min-height: 0px;
+}

@@ -1,0 +1,29 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model IEnumerable<Entity>
+
+@{
+    string entityTypeName = (string) ViewBag.EntityTypeName;
+}
+
+@section SubMenu
+{
+    <li class="search">@Html.ActionLink(Resources.AdvancedSearch, "AdvancedSearch")</li>
+    <li class="create">@Html.ActionLink(Resources.ResourceManager.GetString ("Create" + entityTypeName), "Create")</li>
+}
+
+<h3 class="tit @entityTypeName">
+    @Resources.ResourceManager.GetString(entityTypeName + "Plural")
+</h3>
+
+@using (Html.BeginForm (new { Action = "Create" }))
+{
+    <fieldset>
+        <legend>@Resources.Search</legend>
+        @Html.TextBox("Suggest", null, new { @class = "input-text" })
+        <input type="submit" value="@Resources.Create" id="suggest-submit" class="input-submit" />
+    </fieldset>
+}
+
+@Html.DisplayForModel("EntityTable")

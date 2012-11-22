@@ -1,0 +1,53 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Payola.Intranet.Models.ViewModels.EntityDetailViewModel
+
+@{
+    Layout = "~/Views/Shared/Entity/DetailLayout.cshtml";
+    InformativeEntity informativeEntity = (InformativeEntity) Model.Entity;
+}
+
+@section SubMenuItems
+{
+    @RenderSection("AdditionalSubMenuItems", false)
+    @if (informativeEntity.IsPublishable)
+    {
+        <li class="publish">
+            @Html.ActionLink(Resources.ResourceManager.GetString ("Publish" + (string) ViewBag.EntityTypeName), "Publish", 
+                new { Id = Model.Entity.Id })
+        </li>
+    }
+}
+
+@section Disclaimer
+{
+    @RenderSection("Disclaimer", false)
+}
+
+@if (informativeEntity.Publications.Any ())
+{
+   <div class="publications top5">
+        <h6 class="tit Publication">
+            @Html.ActionLink(Resources.PublicationPlural, "Publications", new { Id = Model.Entity.Id })
+        </h6>
+        @foreach (Publication publication in informativeEntity.Publications.OrderByDescending (p => p.Date).Take (5))
+        {
+            <p>
+                <strong class="date origin">
+                    @publication.Date
+                    @if (!String.IsNullOrWhiteSpace (publication.Place))
+                    {
+                        @:-
+                        @publication.Place
+                    }
+                </strong>
+                <span>
+                    @publication.Description
+                </span>
+            </p>
+        }
+    </div>
+}
+
+@RenderBody()

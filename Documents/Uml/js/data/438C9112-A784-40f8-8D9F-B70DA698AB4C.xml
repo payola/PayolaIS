@@ -1,0 +1,14 @@
+tocTab[tocTab.length] = new Array("4.1:1", "", "Enums", "EARoot/EA4/EA1/EA227.htm", "175.png", "23", "0", "", "Logical diagram0","{6EEDFF8D-497F-4bc4-AD53-B55876E7197F}");
+tocTab[tocTab.length] = new Array("4.1:2", "", "«enumeration» DruhZprávy", "EARoot/EA4/EA1/EA229.htm", "5.png", "102", "0", "", "Class0","{5A477BC0-0A87-4df6-A482-680FA05BD673}");
+tocTab[tocTab.length] = new Array("4.1:3", "", "«enumeration» Důvěryhodnost", "EARoot/EA4/EA1/EA230.htm", "5.png", "653", "0", "", "Class0","{F708F97E-EEC3-42ee-B50A-7DD3BFB6826B}");
+tocTab[tocTab.length] = new Array("4.1:4", "", "«enumeration» Národnost", "EARoot/EA4/EA1/EA231.htm", "5.png", "90", "0", "", "Class0","{5DA3F283-85FE-4f53-98F6-2A114CB47FBF}");
+tocTab[tocTab.length] = new Array("4.1:5", "", "«enumeration» Obor", "EARoot/EA4/EA1/EA232.htm", "5.png", "87", "0", "", "Class0","{7F514F78-84DC-4da4-B7DD-EFFDAA881AC1}");
+tocTab[tocTab.length] = new Array("4.1:6", "", "«enumeration» Pohlaví", "EARoot/EA4/EA1/EA233.htm", "5.png", "84", "0", "", "Class0","{1B2DDC60-3D44-47b6-B77B-A50A0308716B}");
+tocTab[tocTab.length] = new Array("4.1:7", "", "«enumeration» Region", "EARoot/EA4/EA1/EA234.htm", "5.png", "92", "0", "", "Class0","{A07F72D7-F2E5-4b0d-942D-651736A92996}");
+tocTab[tocTab.length] = new Array("4.1:8", "", "«enumeration» RodinnýStav", "EARoot/EA4/EA1/EA235.htm", "5.png", "88", "0", "", "Class0","{46CEEF47-3B67-4586-9293-8C013685E60B}");
+tocTab[tocTab.length] = new Array("4.1:9", "", "«enumeration» StátníPříslušnost", "EARoot/EA4/EA1/EA236.htm", "5.png", "91", "0", "", "Class0","{6F30056C-974D-4fe4-8F08-6E4E1CE5034D}");
+tocTab[tocTab.length] = new Array("4.1:10", "", "«enumeration» StavInformace", "EARoot/EA4/EA1/EA237.htm", "5.png", "652", "0", "", "Class0","{8A0BDF8F-428F-4a16-A36C-6AE3007974EF}");
+tocTab[tocTab.length] = new Array("4.1:11", "", "«enumeration» StavUdálosti", "EARoot/EA4/EA1/EA238.htm", "5.png", "668", "0", "", "Class0","{BE4273F0-FE72-4588-A588-77185415AAB0}");
+tocTab[tocTab.length] = new Array("4.1:12", "", "«enumeration» StavZprávy", "EARoot/EA4/EA1/EA239.htm", "5.png", "101", "0", "", "Class0","{F5B6721D-32F6-4c68-AB76-304DEF4B78FA}");
+tocTab[tocTab.length] = new Array("4.1:13", "", "«enumeration» Titul", "EARoot/EA4/EA1/EA240.htm", "5.png", "89", "0", "", "Class0","{8C7A50BE-02C3-4b76-A46D-87CE3B935633}");
+tocTab[tocTab.length] = new Array("4.1:14", "", "«enumeration» Zdroj", "EARoot/EA4/EA1/EA241.htm", "5.png", "651", "0", "", "Class0","{F3664450-2B13-489f-A4D9-1D9E790DC448}");

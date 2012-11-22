@@ -1,0 +1,13 @@
+﻿@using Payola.Resources;
+
+<h3 class="tit @ViewBag.EntityTypeName">
+    @Resources.ResourceManager.GetString("New" + (string) ViewBag.EntityTypeName)
+</h3>
+
+@using (Html.BeginForm ()) 
+{    
+    @Html.EditorForModel()
+    <p>
+        <input type="submit" value="@Resources.Create" class="input-submit" />
+    </p>
+}

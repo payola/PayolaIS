@@ -1,0 +1,38 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Payola.DomainModel.Incident
+
+@{
+    Layout = "~/Views/Shared/DisplayTemplates/Entity.cshtml";    
+}
+
+<p>
+    <span class="date acquire">
+        <strong>@Resources.OriginYear:</strong>
+        @Html.DisplayFor(e => e.OriginYear)
+    </span>
+</p>
+<p>
+    <strong>@Resources.Fields:</strong>
+    @Html.DisplayFor(i => i.Fields)
+</p>
+<p>
+    <strong>@Resources.Regions:</strong>
+    @Html.DisplayFor(i => i.Regions)
+</p>
+
+@if (!String.IsNullOrWhiteSpace (Model.Annotation))
+{
+    <div class="tit annotation">
+        <h6>@Resources.Annotation</h6>
+        <p>@Html.DisplayFor(e => e.Annotation)</p>
+    </div>
+}
+@if (!String.IsNullOrWhiteSpace (Model.Comment))
+{
+    <div class="tit comment">
+        <h6>@Resources.Comment</h6>
+        <p>@Html.DisplayFor(e => e.Comment)</p>
+    </div>
+}

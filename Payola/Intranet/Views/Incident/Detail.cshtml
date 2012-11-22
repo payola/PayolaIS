@@ -1,0 +1,39 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Payola.Intranet.Models.ViewModels.EntityDetailViewModel        
+
+@{
+    Layout = "~/Views/Shared/Entity/InformativeEntity/DetailLayout.cshtml";
+}
+
+@section AdditionalSubMenuItems
+{
+    @if (((Incident) Model.Entity).State == IncidentState.Open)
+    {
+        <li class="folder">@Html.ActionLink(Resources.CloseIncident, "Close", new { Id = Model.Entity.Id })</li>
+    }
+    else
+    {
+        <li class="folder-open">@Html.ActionLink(Resources.OpenIncident, "Open", new { Id = Model.Entity.Id })</li>
+    }
+}
+
+@section Disclaimer 
+{
+    @{
+        Incident entity = (Incident) Model.Entity;
+    }
+    @if (entity.State == IncidentState.Closed)
+    {
+        <div class="incident-closed">
+            @Resources.IncidentClosed@(String.IsNullOrWhiteSpace (entity.EnclosureDescription) ? "." : ":")
+            @if (!String.IsNullOrWhiteSpace (entity.EnclosureDescription))
+            {
+                <p>
+                    @(((Incident) Model.Entity).EnclosureDescription)
+                </p>
+            }
+        </div>
+    }
+}

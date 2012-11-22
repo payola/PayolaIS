@@ -1,0 +1,30 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Payola.DomainModel.Company
+
+@{
+    Layout = "~/Views/Shared/DisplayTemplates/Entity.cshtml";    
+}
+
+@if (Model.RegistrationDate.HasValue)
+{
+    <p>
+        <span class="date">
+            <strong>@Resources.RegistrationDate:</strong>
+            @Html.DisplayFor(c => c.RegistrationDate)
+        </span>
+    </p>
+}
+<p>
+    <strong>@Resources.RegistrationNumber:</strong>
+    @Html.DisplayFor(c => c.RegistrationNumber)
+</p>
+@if (Model.BasicCapital > 0)
+{
+    <p>
+        <strong>@Resources.BasicCapital:</strong>
+        @Html.DisplayFor(c => c.BasicCapital)
+    </p>
+}
+

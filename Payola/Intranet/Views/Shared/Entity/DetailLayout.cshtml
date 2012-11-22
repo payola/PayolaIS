@@ -1,0 +1,97 @@
+﻿@using Payola.DomainModel;
+@using Payola.Model;
+@using Payola.Resources;
+
+@model Payola.Intranet.Models.ViewModels.EntityDetailViewModel
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+    string entityTypeName = (string) ViewBag.EntityTypeName;
+}
+
+@section SubMenu
+{
+    <li class="search">@Html.ActionLink(Resources.AdvancedSearch, "AdvancedSearch")</li>
+    <li class="create">@Html.ActionLink(Resources.ResourceManager.GetString ("Create" + entityTypeName), "Create")</li>
+    <li id="submenu-active">
+        <a href="#">@(Resources.ResourceManager.GetString(entityTypeName))</a>
+        <ul>
+            @RenderSection("SubMenuItems", false)
+            @if (Model.Entity.IsEditable)
+            {
+                <li class="edit">@Html.ActionLink(Resources.ResourceManager.GetString ("Edit" + entityTypeName), "Edit", new { Id = Model.Entity.Id })</li>
+            }
+            <li class="delete">@Html.ActionLink(Resources.ResourceManager.GetString ("Delete" + entityTypeName), "Delete", new { Id = Model.Entity.Id })</li>
+        </ul>
+    </li>
+}
+
+<h3 class="tit @ViewBag.EntityTypeName">
+    @Model.Entity.Identification
+</h3>
+
+@RenderSection("Disclaimer", false)
+
+<div class="col50">
+    @Html.DisplayFor(m => m.Entity)
+    @RenderBody()
+</div>
+
+<div class="col50 rightcol">
+    @{
+        // Groupping the relations by related entity types.
+        Dictionary<Type, List<TypedRelations>> relationsByRelatedEntityType = new Dictionary<Type, List<TypedRelations>> ();
+        foreach (TypedRelations relations in Model.Relations)
+        {
+            Type relatedEntitiesType = relations.RelationType.ObjectiveEntityType;
+            if (!relationsByRelatedEntityType.ContainsKey (relatedEntitiesType))
+            {
+                relationsByRelatedEntityType[relatedEntitiesType] = new List<TypedRelations> ();   
+            }
+            relationsByRelatedEntityType[relatedEntitiesType].Add (relations);
+        }
+    }
+
+    @foreach (KeyValuePair<Type, List<TypedRelations>> pair in relationsByRelatedEntityType)
+    {
+        string relatedEntitiesTypeName = pair.Key.Name;
+        <div class="relation top5">
+            <h6 class="tit @relatedEntitiesTypeName">
+                @Resources.Related
+                @Resources.ResourceManager.GetString(relatedEntitiesTypeName + "Plural").ToLowerInvariant()
+                (@pair.Value.Sum(t => t.Relations.Count))
+            </h6>
+            @foreach (TypedRelations relations in pair.Value)
+            {
+                <h6 class="tit @relations.RelationType.ObjectiveEntityTypeName">
+                    @Html.ActionLink(Resources.ResourceManager.GetString (relations.RelationType.Name), "Relations",
+                        new { EntityId = Model.Entity.Id, RelationTypeId = relations.RelationType.Id })
+                    (@relations.Relations.Count)
+                </h6>
+                if (relations.Relations.Any ())
+                {
+                    <ul>
+                        @foreach (Entity entity in relations.Relations.Values.Take (10))
+                        {
+                            <li>
+                                @if (relations.RelationType.ObjectiveEntityTypeName != typeof (Keyword).Name)
+                                {
+                                    @Html.ActionLink(entity.Identification, "Detail", relatedEntitiesTypeName, 
+                                        new { Id = entity.Id }, null)
+                                }
+                                else
+                                {
+                                    @entity.Identification    
+                                }
+                            </li>
+                        }
+                        @if (relations.Relations.Count > 10) 
+                        {
+                            <li>...</li>
+                        }
+                    </ul>
+                }
+            }
+        </div>
+    }
+</div>

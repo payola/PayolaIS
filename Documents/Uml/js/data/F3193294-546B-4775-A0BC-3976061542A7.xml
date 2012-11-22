@@ -1,0 +1,16 @@
+tocTab[tocTab.length] = new Array("3.1:1", "", "Entity", "EARoot/EA3/EA1/EA144.htm", "180.png", "69", "0", "", "Use Case diagram0","{1615CDD6-217F-42dc-9A1A-CB77FD8C9320}");
+tocTab[tocTab.length] = new Array("3.1:2", "", "Editace osoby", "EARoot/EA3/EA1/EA146.htm", "7.png", "514", "0", "", "UseCase0","{B949B952-7662-4a36-8BD4-D1341A8083D8}");
+tocTab[tocTab.length] = new Array("3.1:3", "", "Navázání osoby na jinou osobu", "EARoot/EA3/EA1/EA147.htm", "7.png", "516", "0", "", "UseCase0","{2600D872-ED88-4396-B910-1421B4A3B172}");
+tocTab[tocTab.length] = new Array("3.1:4", "", "Navázání osoby na společnost", "EARoot/EA3/EA1/EA148.htm", "7.png", "517", "0", "", "UseCase0","{9057AC2A-BDBA-45d0-99AE-FAED8EDA9A9D}");
+tocTab[tocTab.length] = new Array("3.1:5", "", "NFPK", "EARoot/EA3/EA1/EA149.htm", "6.png", "541", "0", "", "Actor0","{CA7E5379-2A1A-47a9-8E41-79FC906F3187}");
+tocTab[tocTab.length] = new Array("3.1:6", "", "Smazání osoby", "EARoot/EA3/EA1/EA150.htm", "7.png", "515", "0", "", "UseCase0","{92E640FA-28B0-4d20-A3CF-7EA0A4854288}");
+tocTab[tocTab.length] = new Array("3.1:7", "", "Vyhledání entit", "EARoot/EA3/EA1/EA151.htm", "7.png", "499", "0", "", "UseCase0","{64C1C237-3793-4998-AFB0-9DB5889D16A5}");
+tocTab[tocTab.length] = new Array("3.1:8", "", "Založení nové osoby", "EARoot/EA3/EA1/EA152.htm", "7.png", "513", "0", "", "UseCase0","{54D1029B-1EB9-4e2d-B766-0C1D0F7F2CEC}");
+tocTab[tocTab.length] = new Array("3.1:9", "", "Zobrazení detailu entity", "EARoot/EA3/EA1/EA153.htm", "7.png", "506", "0", "", "UseCase0","{A819AF0D-5DFC-4c9f-85CA-1470AE078B8C}");
+tocTab[tocTab.length] = new Array("3.1:10", "", "Zobrazení seznamu osob blízkých k osobě", "EARoot/EA3/EA1/EA154.htm", "7.png", "524", "0", "", "UseCase0","{9D139B33-33AD-4fca-8E1A-3C902A2CAC5F}");
+tocTab[tocTab.length] = new Array("3.1:11", "", "Zobrazení seznamu osob spojených s osobou", "EARoot/EA3/EA1/EA155.htm", "7.png", "521", "0", "", "UseCase0","{E4023BF1-B5C1-4d2a-81A5-E0AA838E3BC4}");
+tocTab[tocTab.length] = new Array("3.1:12", "", "Zobrazení seznamu společností blízkých k osobě", "EARoot/EA3/EA1/EA156.htm", "7.png", "523", "0", "", "UseCase0","{3E27F99F-8176-421f-A042-3D5C27950213}");
+tocTab[tocTab.length] = new Array("3.1:13", "", "Zobrazení seznamu společností spojených s osobou", "EARoot/EA3/EA1/EA157.htm", "7.png", "522", "0", "", "UseCase0","{CFE25797-72D0-4edc-80AA-43ACCF5C9EDF}");
+tocTab[tocTab.length] = new Array("3.1:14", "", "Zobrazení seznamu zpráv spojených s osobou (přes napojené informace)", "EARoot/EA3/EA1/EA158.htm", "7.png", "520", "0", "", "UseCase0","{684FC641-BDD5-46a3-AE76-52F716D142DA}");
+tocTab[tocTab.length] = new Array("3.1:15", "", "Zobrazit seznam informací spojených s osobou", "EARoot/EA3/EA1/EA159.htm", "7.png", "518", "0", "", "UseCase0","{4C1C9820-A52A-4d7f-8ADE-1301E8FFA06B}");
+tocTab[tocTab.length] = new Array("3.1:16", "", "Zobrazit seznam událostí spojených s osobou (přes napojené informace)", "EARoot/EA3/EA1/EA160.htm", "7.png", "519", "0", "", "UseCase0","{3E81AA8A-2BBF-4f9e-B1D4-ED08B953BAA5}");

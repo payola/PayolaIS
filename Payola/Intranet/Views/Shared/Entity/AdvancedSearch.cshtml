@@ -1,0 +1,28 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Payola.Intranet.Models.ViewModels.AdvancedSearchViewModel
+
+@{
+    string entityTypeName = (string) ViewBag.EntityTypeName;
+}
+
+@section SubMenu
+{
+    <li class="search">@Html.ActionLink(Resources.AdvancedSearch, "AdvancedSearch")</li>
+    <li class="create">@Html.ActionLink(Resources.ResourceManager.GetString ("Create" + entityTypeName), "Create")</li>
+}
+
+<h3 class="tit @entityTypeName">
+    @Resources.AdvancedSearch
+</h3>
+
+@using (Html.BeginForm ("AdvancedSearch", entityTypeName, FormMethod.Get))
+{
+    @Html.EditorFor(m => m.Entity, "AdvancedSearchObject")
+    <p>
+        <input type="submit" value="@Resources.Search" class="input-submit" />
+    </p>
+}
+
+@Html.DisplayFor(m => m.FoundEntities, "EntityTable")

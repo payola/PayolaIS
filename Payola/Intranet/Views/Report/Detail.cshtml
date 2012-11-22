@@ -1,0 +1,30 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Payola.Intranet.Models.ViewModels.EntityDetailViewModel
+
+@{
+    Layout = "~/Views/Shared/Entity/InformativeEntity/DetailLayout.cshtml";
+}
+
+@section AdditionalSubMenuItems
+{
+    @if (((Report) Model.Entity).State == ReportState.Concept)
+    {
+        <li class="folder">@Html.ActionLink(Resources.CloseReport, "Close", new { Id = Model.Entity.Id })</li>
+    }
+    else
+    {
+        <li class="folder-open">@Html.ActionLink(Resources.OpenReport, "Open", new { Id = Model.Entity.Id })</li>
+    }
+}
+
+@section Disclaimer 
+{
+    @if (((Report) Model.Entity).State == ReportState.Closed)
+    {
+        <div class="incident-closed">
+            @Resources.ReportClosed.
+        </div>
+    }
+}

@@ -1,0 +1,14 @@
+tocTab[tocTab.length] = new Array("3.5:1", "", "Zprávy", "EARoot/EA3/EA5/EA195.htm", "180.png", "40", "0", "", "Use Case diagram0","{2B1A47E7-47A9-4107-B94A-4B951A9D7C60}");
+tocTab[tocTab.length] = new Array("3.5:2", "", "Editace zprávy", "EARoot/EA3/EA5/EA197.htm", "7.png", "508", "0", "", "UseCase0","{5E1A9BA8-7430-4b09-9369-FAB86C222CC4}");
+tocTab[tocTab.length] = new Array("3.5:3", "", "Odebrání informace ze zprávy", "EARoot/EA3/EA5/EA198.htm", "7.png", "689", "0", "", "UseCase0","{24981F9B-85B0-4bc7-9C83-E08F37D3C33B}");
+tocTab[tocTab.length] = new Array("3.5:4", "", "Odebrání události od zprávy", "EARoot/EA3/EA5/EA199.htm", "7.png", "510", "0", "", "UseCase0","{7FBBADC3-26BE-43b7-B910-BC7FAE8547FC}");
+tocTab[tocTab.length] = new Array("3.5:5", "", "Publikace zprávy", "EARoot/EA3/EA5/EA200.htm", "7.png", "686", "0", "", "UseCase0","{42C536B7-2A18-4f0a-A47E-3C76C2F87D9C}");
+tocTab[tocTab.length] = new Array("3.5:6", "", "Přidání informace do zprávy", "EARoot/EA3/EA5/EA201.htm", "7.png", "688", "0", "", "UseCase0","{EA1972BE-0D9D-40db-91EA-3D4C86F505C2}");
+tocTab[tocTab.length] = new Array("3.5:7", "", "Přidání zprávy k události", "EARoot/EA3/EA5/EA202.htm", "7.png", "511", "0", "", "UseCase0","{F55A866A-6998-407f-9FDD-DC5C2C76C9D1}");
+tocTab[tocTab.length] = new Array("3.5:8", "", "Smazání zprávy", "EARoot/EA3/EA5/EA203.htm", "7.png", "187", "0", "", "UseCase0","{74035889-A2A2-41ab-914A-8F2CD5F0A283}");
+tocTab[tocTab.length] = new Array("3.5:9", "", "Uzavření zprávy", "EARoot/EA3/EA5/EA204.htm", "7.png", "685", "0", "", "UseCase0","{4207B5C7-7169-4ee9-BB66-8E6C33E31F7A}");
+tocTab[tocTab.length] = new Array("3.5:10", "", "Vyhledání zpráv", "EARoot/EA3/EA5/EA205.htm", "7.png", "496", "0", "", "UseCase0","{7B19C5E3-27D6-49ed-BFC7-9BE2148D0599}");
+tocTab[tocTab.length] = new Array("3.5:11", "", "Založení nové zprávy", "EARoot/EA3/EA5/EA206.htm", "7.png", "497", "0", "", "UseCase0","{441F145E-51F7-4a07-864B-3EC520CA1EAA}");
+tocTab[tocTab.length] = new Array("3.5:12", "", "Zobrazení detailu zprávy", "EARoot/EA3/EA5/EA207.htm", "7.png", "505", "0", "", "UseCase0","{C0A02185-0AD7-4cb5-8D99-DFB8E61F8C21}");
+tocTab[tocTab.length] = new Array("3.5:13", "", "Zobrazení informací ve zprávě", "EARoot/EA3/EA5/EA208.htm", "7.png", "687", "0", "", "UseCase0","{94DFA437-4F9A-45cd-AA60-ADE5CED1DBD6}");
+tocTab[tocTab.length] = new Array("3.5:14", "", "Zobrazení událostí publikovaných ve zprávě", "EARoot/EA3/EA5/EA209.htm", "7.png", "509", "0", "", "UseCase0","{9F2FC864-A082-43df-885F-6E84D9F347FD}");

@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("1", "1", "BusinessProcess", "EARoot/EA1.htm", "30.png", "", "", "{DC798E7F-8E75-4cae-8528-8549D2628559}", "Package");
+tocTab[tocTab.length] = new Array("2", "1", "DB", "EARoot/EA2.htm", "31.png", "", "", "{5835D108-BC26-49ae-AD9E-F1E6D1C87C24}", "Package");
+tocTab[tocTab.length] = new Array("3", "1", "Use Cases", "EARoot/EA3.htm", "29.png", "", "", "{7F17F346-5AA7-451e-8942-B61F5D7880FB}", "Package");
+tocTab[tocTab.length] = new Array("4", "1", "Domain", "EARoot/EA4.htm", "31.png", "", "", "{2FCB7D52-43E7-45de-BFDF-4FDB0CC480BE}", "Package");

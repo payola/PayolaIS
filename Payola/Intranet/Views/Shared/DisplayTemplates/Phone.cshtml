@@ -1,0 +1,13 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Payola.DomainModel.Phone
+           
+@{
+    Layout = "~/Views/Shared/DisplayTemplates/Entity.cshtml";    
+}
+
+<p>
+    <strong>@Resources.Number:</strong>
+    +@Html.DisplayFor(i => i.AnteNumber) @Html.DisplayFor(i => i.Number)
+</p>

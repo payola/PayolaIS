@@ -1,0 +1,33 @@
+﻿@using Payola.Helpers;
+@using Payola.Resources;
+
+@model Payola.Intranet.Models.ViewModels.EntityViewModel
+
+@{
+    string entityTypeName = (string) ViewBag.EntityTypeName;
+    object routeValues = new { Id = Model.Entity.Id };
+}
+
+@section SubMenu
+{
+    <li class="search">@Html.ActionLink(Resources.AdvancedSearch, "AdvancedSearch")</li>
+    <li class="create">@Html.ActionLink(Resources.ResourceManager.GetString ("Create" + entityTypeName), "Create")</li>
+    <li id="submenu-active">
+        @Html.ActionLink(Resources.ResourceManager.GetString(entityTypeName), "Detail", routeValues)
+        <ul>
+            <li class="back">@Html.ActionLink(Resources.BackToDetail, "Detail", routeValues)</li>
+        </ul>
+    </li>
+}
+
+<h3 class="tit @ViewBag.EntityTypeName">
+    @Resources.ResourceManager.GetString("ReallyRemove" + entityTypeName) @Model.Entity.Identification?
+</h3>
+
+@Html.DisplayFor(m => m.Entity)
+@using (Html.BeginForm ())
+{
+    <p>
+        <input type="submit" value="@Resources.Remove" class="input-submit" />
+    </p>
+}

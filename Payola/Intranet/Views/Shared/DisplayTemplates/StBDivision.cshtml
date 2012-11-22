@@ -1,0 +1,13 @@
+﻿@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model Payola.DomainModel.StbDivision
+
+@{
+    Layout = "~/Views/Shared/DisplayTemplates/Entity.cshtml";    
+}
+
+<p>
+    <strong>@Resources.Name:</strong>
+    @Html.DisplayFor(d => d.Name)
+</p>

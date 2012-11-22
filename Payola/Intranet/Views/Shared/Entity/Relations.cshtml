@@ -1,0 +1,58 @@
+@using Payola.DomainModel;
+@using Payola.Model;
+@using Payola.Resources;
+
+@model Payola.Intranet.Models.ViewModels.EntityRelationsViewModel
+
+@{
+    string entityTypeName = (string) ViewBag.EntityTypeName;
+    object routeValues = new { Id = Model.Entity.Id };
+}
+
+@section SubMenu
+{
+    <li class="search">@Html.ActionLink(Resources.AdvancedSearch, "AdvancedSearch")</li>
+    <li class="create">@Html.ActionLink(Resources.ResourceManager.GetString ("Create" + entityTypeName), "Create")</li>
+    <li id="submenu-active">
+        @Html.ActionLink(Resources.ResourceManager.GetString(entityTypeName), "Detail", routeValues)
+        <ul>
+            <li class="back">@Html.ActionLink(Resources.BackToDetail, "Detail", routeValues)</li>
+        </ul>
+    </li>
+}
+
+<h3 class="tit @ViewBag.EntityTypeName">
+    @Model.Entity.Identification
+    @Resources.ResourceManager.GetString(Model.Relations.RelationType.Name).ToLowerInvariant()
+    <span class="@Model.Relations.RelationType.ObjectiveEntityTypeName"></span>
+</h3>
+
+@if (Model.Relations.Relations.Any ())
+{
+    @Html.DisplayFor(m => m.Relations.Relations, "RelationsTable", new
+    {
+        Entity = Model.Entity,
+        RelationType = Model.Relations.RelationType
+    })
+}
+else
+{
+    <p>
+        @Resources.NoRelated
+        @Resources.ResourceManager.GetString(Model.Relations.RelationType.ObjectiveEntityTypeName + "Plural").ToLowerInvariant().
+    </p>
+}
+    
+@if (Model.Entity.IsEditable)
+{
+    using (Html.BeginForm("CreateAndAddRelation", entityTypeName))
+    {
+        @Html.AntiForgeryToken()
+        @Html.Hidden("RelationTypeId", entityTypeName)
+        @Html.Hidden("EntityId", Model.Entity.Id)
+        <p>
+            @Html.TextBox("RelatedEntityId", null, new {@class = "input-text"})
+            <input type="submit" value="@Resources.CreateAndAddRelation" class="input-submit" />
+        </p>
+    }
+}

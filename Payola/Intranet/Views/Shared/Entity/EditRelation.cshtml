@@ -1,0 +1,41 @@
+﻿@using Payola.Resources;
+
+@model Payola.Intranet.Models.ViewModels.RelationEditViewModel
+
+@{
+    string entityTypeName = (string) ViewBag.EntityTypeName;
+    object routeValues = new { Id = Model.EntityId };
+}
+
+@section SubMenu
+{
+    <li class="search">@Html.ActionLink(Resources.AdvancedSearch, "AdvancedSearch")</li>
+    <li class="create">@Html.ActionLink(Resources.ResourceManager.GetString ("Create" + entityTypeName), "Create")</li>
+    <li id="submenu-active">
+        @Html.ActionLink(Resources.ResourceManager.GetString(entityTypeName), "Detail", routeValues)
+        <ul>
+            <li class="back">@Html.ActionLink(Resources.BackToDetail, "Detail", routeValues)</li>
+            <li class="back">
+                @Html.ActionLink(Resources.BackToRelation, "Relations", new { RelationTypeId = Model.RelationTypeId,
+                    EntityId = Model.EntityId, })
+            </li>
+        </ul>
+    </li>
+}
+
+<h3 class="tit">
+    @Resources.PropertiesOfRelationBetween
+    @Model.Relation.SubjectiveEntity.Identification
+    @Resources.And
+    @Model.Relation.ObjectiveEntity.Identification
+</h3>
+
+@using (Html.BeginForm ())
+{
+    @Html.HiddenFor(m => m.RelationTypeId)
+    @Html.HiddenFor(m => m.EntityId)
+    @Html.EditorFor(m => m.Relation)
+    <p>
+        <input type="submit" value="@Resources.SaveChanges" class="input-submit" />
+    </p>
+}

@@ -1,0 +1,44 @@
+﻿@using System.ComponentModel.DataAnnotations;
+@using Payola.DomainModel;
+@using Payola.Resources;
+
+@model IEnumerable<Entity>
+
+@if (Model.Any ())
+{
+    ModelMetadata entityMetadata = ModelMetadataProviders.Current.GetMetadataForType (null, Model.First ().GetType ());
+    IEnumerable<ModelMetadata> propertyMetadatas =
+        from p in entityMetadata.Properties
+        where p.ShowForDisplay && p.DataTypeName != DataType.MultilineText.ToString ()
+        select p;
+    
+    <table cellspacing="0" class="full-width">
+        <tr>
+            <th>
+                @Resources.Action            
+            </th>
+            @foreach (ModelMetadata property in propertyMetadatas)
+            {
+                <th>@Resources.ResourceManager.GetString(property.PropertyName)</th>
+            }
+        </tr>
+
+        @{ bool odd = true; }
+        @foreach (Entity entity in Model)
+        {
+            odd = !odd;
+           <tr class="@(odd ? "bg" : String.Empty)">
+                <td class="detail">
+                    @Html.ActionLink(Resources.Detail, "Detail", new { Id = entity.Id })
+                </td>
+                <!--<td class="edit">
+                    @Html.ActionLink(Resources.Edit, "Edit", new { Id = entity.Id })
+                </td>
+                <td class="delete">
+                    @Html.ActionLink(Resources.Delete, "Delete", new { Id = entity.Id })
+                </td>-->
+                @Html.DisplayFor(m => entity, "EntityCells", new { PropertyMetadatas = propertyMetadatas })
+            </tr>
+        }
+    </table>
+}

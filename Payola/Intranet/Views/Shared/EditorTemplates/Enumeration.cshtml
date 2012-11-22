@@ -1,0 +1,20 @@
+﻿@using Payola.Resources;
+
+@model Enum
+ 
+@{
+    Type enumType = Model.GetType ();
+    List<SelectListItem> items = new List<SelectListItem> ();
+    foreach (string name in Enum.GetNames (enumType))
+    {
+        string value = Enum.Parse (enumType, name).ToString ();
+        
+        items.Add (new SelectListItem { 
+            Text = Resources.ResourceManager.GetString (enumType.Name + name) ?? name,
+            Value = value,
+            Selected = value == Model.ToString ()
+        });
+    }
+}
+
+@Html.DropDownList(String.Empty, items)

@@ -1,0 +1,1008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AcquirementDate" xml:space="preserve">
+    <value>Datum získání</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adresa</value>
+  </data>
+  <data name="Annotation" xml:space="preserve">
+    <value>Anotace</value>
+  </data>
+  <data name="AnteNumber" xml:space="preserve">
+    <value>Předčíslí</value>
+  </data>
+  <data name="BasicCapital" xml:space="preserve">
+    <value>Základní kapitál</value>
+  </data>
+  <data name="Bind" xml:space="preserve">
+    <value>Navázat</value>
+  </data>
+  <data name="BirthDate" xml:space="preserve">
+    <value>Datum narození</value>
+  </data>
+  <data name="BirthSurname" xml:space="preserve">
+    <value>Rodné příjmení</value>
+  </data>
+  <data name="Brand" xml:space="preserve">
+    <value>Značka</value>
+  </data>
+  <data name="Citizenships" xml:space="preserve">
+    <value>Státní občanství</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Město</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>Barva</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Komentář</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Společnost</value>
+  </data>
+  <data name="CompanyPlural" xml:space="preserve">
+    <value>Společnosti</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Vytvořit</value>
+  </data>
+  <data name="CreateCompany" xml:space="preserve">
+    <value>Vytvořit novou společnost</value>
+  </data>
+  <data name="CreateIncident" xml:space="preserve">
+    <value>Vytvořit novou událost</value>
+  </data>
+  <data name="CreateInformation" xml:space="preserve">
+    <value>Vytvořit novou informaci</value>
+  </data>
+  <data name="CreatePerson" xml:space="preserve">
+    <value>Vytvořit novou osobu</value>
+  </data>
+  <data name="CreateReport" xml:space="preserve">
+    <value>Vytvořit novou zprávu</value>
+  </data>
+  <data name="Credibility" xml:space="preserve">
+    <value>Důvěryhodnost</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Čas publikace</value>
+  </data>
+  <data name="DegreesAheadName" xml:space="preserve">
+    <value>Tituly před jménem</value>
+  </data>
+  <data name="DegreesBehindName" xml:space="preserve">
+    <value>Tituly za jménem</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Upravit</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>E-mail adresa</value>
+  </data>
+  <data name="EnclosureDescription" xml:space="preserve">
+    <value>Popis uzavření</value>
+  </data>
+  <data name="Incident" xml:space="preserve">
+    <value>Událost</value>
+  </data>
+  <data name="IncidentPlural" xml:space="preserve">
+    <value>Události</value>
+  </data>
+  <data name="Fields" xml:space="preserve">
+    <value>Obor</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Jméno</value>
+  </data>
+  <data name="HasAddress" xml:space="preserve">
+    <value>Má adresy</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Domů</value>
+  </data>
+  <data name="HouseNumber" xml:space="preserve">
+    <value>Číslo orientační</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Informace</value>
+  </data>
+  <data name="InformationPlural" xml:space="preserve">
+    <value>Informace</value>
+  </data>
+  <data name="InsertionDate" xml:space="preserve">
+    <value>Datum vložení</value>
+  </data>
+  <data name="IsPublishable" xml:space="preserve">
+    <value>Publikovatelná</value>
+  </data>
+  <data name="KeywordsValue" xml:space="preserve">
+    <value>Klíčová slova</value>
+  </data>
+  <data name="Kind" xml:space="preserve">
+    <value>Druh</value>
+  </data>
+  <data name="LandRegistryNumber" xml:space="preserve">
+    <value>Číslo popisné</value>
+  </data>
+  <data name="LicenseNumber" xml:space="preserve">
+    <value>SPZ</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>Výrobce</value>
+  </data>
+  <data name="MaritalStatus" xml:space="preserve">
+    <value>Rodinný stav</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Jméno</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>Národnost</value>
+  </data>
+  <data name="NewCompany" xml:space="preserve">
+    <value>Nová společnost</value>
+  </data>
+  <data name="NewIncident" xml:space="preserve">
+    <value>Nová událost</value>
+  </data>
+  <data name="NewInformation" xml:space="preserve">
+    <value>Nová informace</value>
+  </data>
+  <data name="NewPerson" xml:space="preserve">
+    <value>Nová osoba</value>
+  </data>
+  <data name="NewReport" xml:space="preserve">
+    <value>Nová zpráva</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Poznámka</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Číslo</value>
+  </data>
+  <data name="ObjectiveTypeName" xml:space="preserve">
+    <value>Typ objektu v relaci</value>
+  </data>
+  <data name="OriginDate" xml:space="preserve">
+    <value>Datum vzniku</value>
+  </data>
+  <data name="OriginYear" xml:space="preserve">
+    <value>Rok založení</value>
+  </data>
+  <data name="Person" xml:space="preserve">
+    <value>Osoba</value>
+  </data>
+  <data name="PersonalIdentificationNumber" xml:space="preserve">
+    <value>Rodné číslo</value>
+  </data>
+  <data name="PersonPlural" xml:space="preserve">
+    <value>Osoby</value>
+  </data>
+  <data name="Place" xml:space="preserve">
+    <value>Místo publikace</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>PSČ</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="RegistrationDate" xml:space="preserve">
+    <value>Datum zápisu</value>
+  </data>
+  <data name="RegistrationNumber" xml:space="preserve">
+    <value>IČ</value>
+  </data>
+  <data name="Relations" xml:space="preserve">
+    <value>Vazby</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Zpráva</value>
+  </data>
+  <data name="ReportPlural" xml:space="preserve">
+    <value>Zprávy</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>Uložit změny</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Pohlaví</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Zdroj</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>Ulice</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Příjmení</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>Vítá vás Payola!</value>
+  </data>
+  <data name="IncidentStateClosed" xml:space="preserve">
+    <value>Uzavřená</value>
+  </data>
+  <data name="IncidentStateOpen" xml:space="preserve">
+    <value>Otevřená</value>
+  </data>
+  <data name="FieldBanking" xml:space="preserve">
+    <value>Bankovnictví</value>
+  </data>
+  <data name="FieldHealth" xml:space="preserve">
+    <value>Zdravotnictví</value>
+  </data>
+  <data name="CredibilityDoubtfulButMaybeTrue" xml:space="preserve">
+    <value>Pochybná, ale možná pravdivá</value>
+  </data>
+  <data name="CredibilityLikelyTrue" xml:space="preserve">
+    <value>Pravděpodobně pravdivá</value>
+  </data>
+  <data name="CredibilityMaybeTrue" xml:space="preserve">
+    <value>Asi pravdivá</value>
+  </data>
+  <data name="CredibilityTrue" xml:space="preserve">
+    <value>Pravdivá</value>
+  </data>
+  <data name="CredibilityUnableToAssess" xml:space="preserve">
+    <value>Nelze posoudit</value>
+  </data>
+  <data name="CredibilityUnlikelyTrue" xml:space="preserve">
+    <value>Nepravděpodobná</value>
+  </data>
+  <data name="InformationStateUnverified" xml:space="preserve">
+    <value>Neověřeno</value>
+  </data>
+  <data name="InformationStateVerificationInProgress" xml:space="preserve">
+    <value>Probíhá ověřování</value>
+  </data>
+  <data name="InformationStateVerified" xml:space="preserve">
+    <value>Ověřeno</value>
+  </data>
+  <data name="MaritalStatusDivorced" xml:space="preserve">
+    <value>Rozvedený/Rozvedená</value>
+  </data>
+  <data name="MaritalStatusMarried" xml:space="preserve">
+    <value>Ženatý/Vdaná</value>
+  </data>
+  <data name="MaritalStatusSingle" xml:space="preserve">
+    <value>Svobodný/Svobodná</value>
+  </data>
+  <data name="MaritalStatusWidowed" xml:space="preserve">
+    <value>Ovdovělý/Ovdovělá</value>
+  </data>
+  <data name="SourceInternet" xml:space="preserve">
+    <value>Internet</value>
+  </data>
+  <data name="SourceOther" xml:space="preserve">
+    <value>Jiný</value>
+  </data>
+  <data name="SourcePress" xml:space="preserve">
+    <value>Tisk</value>
+  </data>
+  <data name="SourceRadio" xml:space="preserve">
+    <value>Rádio</value>
+  </data>
+  <data name="SourceTelevision" xml:space="preserve">
+    <value>Televize</value>
+  </data>
+  <data name="SexFemale" xml:space="preserve">
+    <value>Žena</value>
+  </data>
+  <data name="SexMale" xml:space="preserve">
+    <value>Muž</value>
+  </data>
+  <data name="AddressPlural" xml:space="preserve">
+    <value>Adresy</value>
+  </data>
+  <data name="CreateAddress" xml:space="preserve">
+    <value>Vytvořit novou adresu</value>
+  </data>
+  <data name="CreateEmail" xml:space="preserve">
+    <value>Vytvořit nový e-mail</value>
+  </data>
+  <data name="CreatePhone" xml:space="preserve">
+    <value>Vytvořit nový telefon</value>
+  </data>
+  <data name="CreateVehicle" xml:space="preserve">
+    <value>Vytvořit nové vozidlo</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="EmailPlural" xml:space="preserve">
+    <value>E-maily</value>
+  </data>
+  <data name="NewAddress" xml:space="preserve">
+    <value>Nová adresa</value>
+  </data>
+  <data name="NewEmail" xml:space="preserve">
+    <value>Nový e-mail</value>
+  </data>
+  <data name="NewPhone" xml:space="preserve">
+    <value>Nový telefon</value>
+  </data>
+  <data name="NewVehicle" xml:space="preserve">
+    <value>Nové vozidlo</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="PhonePlural" xml:space="preserve">
+    <value>Telefony</value>
+  </data>
+  <data name="Vehicle" xml:space="preserve">
+    <value>Vozidlo</value>
+  </data>
+  <data name="VehiclePlural" xml:space="preserve">
+    <value>Vozidla</value>
+  </data>
+  <data name="ValidFrom" xml:space="preserve">
+    <value>Platnost od</value>
+  </data>
+  <data name="ValidTo" xml:space="preserve">
+    <value>Platnost do</value>
+  </data>
+  <data name="NoRelated" xml:space="preserve">
+    <value>Žádné navázané</value>
+  </data>
+  <data name="PersonUsesEmail" xml:space="preserve">
+    <value>Používá e-maily</value>
+  </data>
+  <data name="PersonUsesPhone" xml:space="preserve">
+    <value>Používá telefony</value>
+  </data>
+  <data name="PersonUsesVehicle" xml:space="preserve">
+    <value>Používá vozidla</value>
+  </data>
+  <data name="ReportKindMedia" xml:space="preserve">
+    <value>Mediální</value>
+  </data>
+  <data name="ReportKindOther" xml:space="preserve">
+    <value>Jiná</value>
+  </data>
+  <data name="ReportKindOutput" xml:space="preserve">
+    <value>Výstupní</value>
+  </data>
+  <data name="ReportKindOverview" xml:space="preserve">
+    <value>Přehledová</value>
+  </data>
+  <data name="ReportKindSituational" xml:space="preserve">
+    <value>Situační</value>
+  </data>
+  <data name="ReportKindUnderlying" xml:space="preserve">
+    <value>Podkladová</value>
+  </data>
+  <data name="ReportStateClosed" xml:space="preserve">
+    <value>Uzavřená</value>
+  </data>
+  <data name="ReportStateConcept" xml:space="preserve">
+    <value>Koncept</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Hodnota musí být zadána.</value>
+  </data>
+  <data name="DataTypeAttributeErrorMessage" xml:space="preserve">
+    <value>Toto pole obsahuje neplatnou hodnotu.</value>
+  </data>
+  <data name="MaxLengthAttributeErrorMessage" xml:space="preserve">
+    <value>Text v tomto poli nesmí být delší než {1} znaků.</value>
+  </data>
+  <data name="RequiredAttributeErrorMessage" xml:space="preserve">
+    <value>Toto pole musí být vyplněno.</value>
+  </data>
+  <data name="PropertyValueInvalid" xml:space="preserve">
+    <value>Hodnota tohoto pole je neplatná.</value>
+  </data>
+  <data name="IncidentHasRelatedInformation" xml:space="preserve">
+    <value>Souvisí s informacemi</value>
+  </data>
+  <data name="InformationHasRelatedIncident" xml:space="preserve">
+    <value>Souvisí s událostmi</value>
+  </data>
+  <data name="ReportDescribesIncident" xml:space="preserve">
+    <value>Popisuje události</value>
+  </data>
+  <data name="ReportDescribesInformation" xml:space="preserve">
+    <value>Popisuje informace</value>
+  </data>
+  <data name="InformationMentionsAddress" xml:space="preserve">
+    <value>Pojednává o adresách</value>
+  </data>
+  <data name="InformationMentionsCompany" xml:space="preserve">
+    <value>Pojednává o společnostech</value>
+  </data>
+  <data name="InformationMentionsEmail" xml:space="preserve">
+    <value>Pojednává o e-mailech</value>
+  </data>
+  <data name="InformationMentionsPerson" xml:space="preserve">
+    <value>Pojednává o osobách</value>
+  </data>
+  <data name="InformationMentionsPhone" xml:space="preserve">
+    <value>Pojednává o telefonech</value>
+  </data>
+  <data name="InformationMentionsVehicle" xml:space="preserve">
+    <value>Pojednává o vozidlech</value>
+  </data>
+  <data name="InformativeEntityContainsKeyword" xml:space="preserve">
+    <value>Obsahuje klíčová slova</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Uživatel</value>
+  </data>
+  <data name="DeleteAddress" xml:space="preserve">
+    <value>Smazat tuto adresu</value>
+  </data>
+  <data name="DeleteCompany" xml:space="preserve">
+    <value>Smazat tuto společnost</value>
+  </data>
+  <data name="DeleteEmail" xml:space="preserve">
+    <value>Smazat tento e-mail</value>
+  </data>
+  <data name="DeleteIncident" xml:space="preserve">
+    <value>Smazat tuto událost</value>
+  </data>
+  <data name="DeleteInformation" xml:space="preserve">
+    <value>Smazat tuto informaci</value>
+  </data>
+  <data name="DeletePerson" xml:space="preserve">
+    <value>Smazat tuto osobu</value>
+  </data>
+  <data name="DeletePhone" xml:space="preserve">
+    <value>Smazat tento telefon</value>
+  </data>
+  <data name="DeleteReport" xml:space="preserve">
+    <value>Smazat tuto zprávu</value>
+  </data>
+  <data name="DeleteVehicle" xml:space="preserve">
+    <value>Smazat toto vozidlo</value>
+  </data>
+  <data name="EditAddress" xml:space="preserve">
+    <value>Upravit tuto adresu</value>
+  </data>
+  <data name="EditCompany" xml:space="preserve">
+    <value>Upravit tuto společnost</value>
+  </data>
+  <data name="EditEmail" xml:space="preserve">
+    <value>Upravit tento e-mail</value>
+  </data>
+  <data name="EditIncident" xml:space="preserve">
+    <value>Upravit tuto událost</value>
+  </data>
+  <data name="EditInformation" xml:space="preserve">
+    <value>Upravit tuto informaci</value>
+  </data>
+  <data name="EditPerson" xml:space="preserve">
+    <value>Upravit tuto osobu</value>
+  </data>
+  <data name="EditPhone" xml:space="preserve">
+    <value>Upravit tento telefon</value>
+  </data>
+  <data name="EditReport" xml:space="preserve">
+    <value>Upravit tuto zprávu</value>
+  </data>
+  <data name="EditVehicle" xml:space="preserve">
+    <value>Upravit toto vozidlo</value>
+  </data>
+  <data name="AddRelation" xml:space="preserve">
+    <value>Navázat</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Vyhledat</value>
+  </data>
+  <data name="BackToDetail" xml:space="preserve">
+    <value>Zpět na detail</value>
+  </data>
+  <data name="DeleteRelation" xml:space="preserve">
+    <value>Smazat vazbu</value>
+  </data>
+  <data name="CloseReport" xml:space="preserve">
+    <value>Uzavřít tuto zprávu</value>
+  </data>
+  <data name="OpenReport" xml:space="preserve">
+    <value>Otevřít tuto zprávu</value>
+  </data>
+  <data name="CloseIncident" xml:space="preserve">
+    <value>Uzavřít tuto událost</value>
+  </data>
+  <data name="OpenIncident" xml:space="preserve">
+    <value>Otevřít tuto událost</value>
+  </data>
+  <data name="ClosingIncident" xml:space="preserve">
+    <value>Uzavření události</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Uzavřít</value>
+  </data>
+  <data name="PublishIncident" xml:space="preserve">
+    <value>Publikovat tuto událost</value>
+  </data>
+  <data name="PublishInformation" xml:space="preserve">
+    <value>Publikovat tuto informaci</value>
+  </data>
+  <data name="PublishReport" xml:space="preserve">
+    <value>Publikovat tuto zprávu</value>
+  </data>
+  <data name="PublishingIncident" xml:space="preserve">
+    <value>Publikace události</value>
+  </data>
+  <data name="PublishingInformation" xml:space="preserve">
+    <value>Publikace informace</value>
+  </data>
+  <data name="PublishingReport" xml:space="preserve">
+    <value>Publikace zprávy</value>
+  </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Publikovat</value>
+  </data>
+  <data name="PublicationsOfIncident" xml:space="preserve">
+    <value>Přehled publikací události</value>
+  </data>
+  <data name="PublicationsOfInformation" xml:space="preserve">
+    <value>Přehled publikací informace</value>
+  </data>
+  <data name="PublicationsOfReport" xml:space="preserve">
+    <value>Přehled publikací zprávy</value>
+  </data>
+  <data name="BackToRelation" xml:space="preserve">
+    <value>Zpět na přehled vazby</value>
+  </data>
+  <data name="AndAddRelationTo" xml:space="preserve">
+    <value>a navázat na</value>
+  </data>
+  <data name="CreateAndAddRelation" xml:space="preserve">
+    <value>Vytvořit a navázat</value>
+  </data>
+  <data name="CreateKeyword" xml:space="preserve">
+    <value>Vytvořit nové klíčové slovo</value>
+  </data>
+  <data name="Keyword" xml:space="preserve">
+    <value>Klíčové slovo</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Hodnota</value>
+  </data>
+  <data name="IncidentClosed" xml:space="preserve">
+    <value>Událost je uzavřena</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ano</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Akce</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>a</value>
+  </data>
+  <data name="PropertiesOfRelationBetween" xml:space="preserve">
+    <value>Vlastnosti vazby mezi</value>
+  </data>
+  <data name="PublicationPlural" xml:space="preserve">
+    <value>Publikace</value>
+  </data>
+  <data name="ReportClosed" xml:space="preserve">
+    <value>Zpráva je uzavřena</value>
+  </data>
+  <data name="CompanyHasAddress" xml:space="preserve">
+    <value>Sídlí na adresách</value>
+  </data>
+  <data name="CompanyHasAssociate" xml:space="preserve">
+    <value>Má společníky</value>
+  </data>
+  <data name="CompanyHasDirector" xml:space="preserve">
+    <value>Má členy představenstva</value>
+  </data>
+  <data name="CompanyHasEmail" xml:space="preserve">
+    <value>Používá e-maily</value>
+  </data>
+  <data name="CompanyHasExecutive" xml:space="preserve">
+    <value>Má jednatele</value>
+  </data>
+  <data name="CompanyHasPhone" xml:space="preserve">
+    <value>Vlastní telefony</value>
+  </data>
+  <data name="CompanyHasSupervisor" xml:space="preserve">
+    <value>Má členy dozorčí rady</value>
+  </data>
+  <data name="CompanyHasVehicle" xml:space="preserve">
+    <value>Vlastní vozidla</value>
+  </data>
+  <data name="PersonHasBirthAddress" xml:space="preserve">
+    <value>Má místa narození</value>
+  </data>
+  <data name="PersonHasBusinessPartner" xml:space="preserve">
+    <value>Má obchodní partnery</value>
+  </data>
+  <data name="PersonHasColleague" xml:space="preserve">
+    <value>Spolupracuje s osobami</value>
+  </data>
+  <data name="PersonHasParent" xml:space="preserve">
+    <value>Má rodiče</value>
+  </data>
+  <data name="PersonHasParentInLaw" xml:space="preserve">
+    <value>Má nevlastní rodiče</value>
+  </data>
+  <data name="PersonHasPartner" xml:space="preserve">
+    <value>Má partnery</value>
+  </data>
+  <data name="PersonHasResidence" xml:space="preserve">
+    <value>Má trvalá bydliště</value>
+  </data>
+  <data name="PersonHasWhereabouts" xml:space="preserve">
+    <value>Má místa pobytu</value>
+  </data>
+  <data name="PersonIsInMarriage" xml:space="preserve">
+    <value>Je v manželství s osobami</value>
+  </data>
+  <data name="VehicleParkedOnAddress" xml:space="preserve">
+    <value>Parkovalo na adresách</value>
+  </data>
+  <data name="KeywordPlural" xml:space="preserve">
+    <value>Klíčová slova</value>
+  </data>
+  <data name="FieldArmy" xml:space="preserve">
+    <value>Armáda</value>
+  </data>
+  <data name="FieldAutonomy" xml:space="preserve">
+    <value>Samospráva</value>
+  </data>
+  <data name="FieldBranchOfMinistry" xml:space="preserve">
+    <value>Organizační složka ministerstva</value>
+  </data>
+  <data name="FieldChamberOfDeputies" xml:space="preserve">
+    <value>Poslanecká sněmovna</value>
+  </data>
+  <data name="FieldCourt" xml:space="preserve">
+    <value>Soud</value>
+  </data>
+  <data name="FieldGovernment" xml:space="preserve">
+    <value>Vláda</value>
+  </data>
+  <data name="FieldMinistry" xml:space="preserve">
+    <value>Ministerstvo</value>
+  </data>
+  <data name="FieldOther" xml:space="preserve">
+    <value>Jiný subjekt</value>
+  </data>
+  <data name="FieldOtherCentralAuthority" xml:space="preserve">
+    <value>Jiný ústřední orgán</value>
+  </data>
+  <data name="FieldPolice" xml:space="preserve">
+    <value>Policie</value>
+  </data>
+  <data name="FieldPresident" xml:space="preserve">
+    <value>Prezident</value>
+  </data>
+  <data name="FieldProsecution" xml:space="preserve">
+    <value>Státní zastupitelství</value>
+  </data>
+  <data name="FieldSenate" xml:space="preserve">
+    <value>Senát</value>
+  </data>
+  <data name="FieldStateCapitalOrganization" xml:space="preserve">
+    <value>Organizace s majetkovou účastí státu</value>
+  </data>
+  <data name="NotSpecified" xml:space="preserve">
+    <value>Neurčeno</value>
+  </data>
+  <data name="SourceLiterature" xml:space="preserve">
+    <value>Literatura</value>
+  </data>
+  <data name="SourceNotSpecified" xml:space="preserve">
+    <value>Neurčeno</value>
+  </data>
+  <data name="SourcePerson" xml:space="preserve">
+    <value>Fyzická osoba</value>
+  </data>
+  <data name="InformationStateUnverifiable" xml:space="preserve">
+    <value>Nelze ověřit</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Stát</value>
+  </data>
+  <data name="CompanyHasAddressInverse" xml:space="preserve">
+    <value>Je sídlem společností</value>
+  </data>
+  <data name="CompanyHasAssociateInverse" xml:space="preserve">
+    <value>Je společníkem ve společnostech</value>
+  </data>
+  <data name="CompanyHasDirectorInverse" xml:space="preserve">
+    <value>Je členem představenstva společností</value>
+  </data>
+  <data name="CompanyHasEmailInverse" xml:space="preserve">
+    <value>Je používán společnostmi</value>
+  </data>
+  <data name="CompanyHasExecutiveInverse" xml:space="preserve">
+    <value>Je jednatelem společností</value>
+  </data>
+  <data name="CompanyHasPhoneInverse" xml:space="preserve">
+    <value>Je vlastněn společnostmi</value>
+  </data>
+  <data name="CompanyHasSupervisorInverse" xml:space="preserve">
+    <value>Je členem dozorčí rady společností</value>
+  </data>
+  <data name="CompanyHasVehicleInverse" xml:space="preserve">
+    <value>Je vlastněno společnostmi</value>
+  </data>
+  <data name="InformationMentionsAddressInverse" xml:space="preserve">
+    <value>Je obsažena v informacích</value>
+  </data>
+  <data name="InformationMentionsCompanyInverse" xml:space="preserve">
+    <value>Je obsažena v informacích</value>
+  </data>
+  <data name="InformationMentionsEmailInverse" xml:space="preserve">
+    <value>Je obsažen v informacích</value>
+  </data>
+  <data name="InformationMentionsPersonInverse" xml:space="preserve">
+    <value>Je obsažena v informacích</value>
+  </data>
+  <data name="InformationMentionsPhoneInverse" xml:space="preserve">
+    <value>Je obsažen v informacích</value>
+  </data>
+  <data name="InformationMentionsVehicleInverse" xml:space="preserve">
+    <value>Je obsaženo v informacích</value>
+  </data>
+  <data name="PersonHasBirthAddressInverse" xml:space="preserve">
+    <value>Je místem narození osob</value>
+  </data>
+  <data name="PersonHasParentInLawInverse" xml:space="preserve">
+    <value>Má nevlastní děti</value>
+  </data>
+  <data name="PersonHasParentInverse" xml:space="preserve">
+    <value>Má děti</value>
+  </data>
+  <data name="PersonHasResidenceInverse" xml:space="preserve">
+    <value>Je trvalým bydlištěm osob</value>
+  </data>
+  <data name="PersonHasWhereaboutsInverse" xml:space="preserve">
+    <value>Je místem pobytu osob</value>
+  </data>
+  <data name="PersonUsesEmailInverse" xml:space="preserve">
+    <value>Je používán osobami</value>
+  </data>
+  <data name="PersonUsesPhoneInverse" xml:space="preserve">
+    <value>Je používán osobami</value>
+  </data>
+  <data name="PersonUsesVehicleInverse" xml:space="preserve">
+    <value>Je používáno osobami</value>
+  </data>
+  <data name="VehicleParkedOnAddressInverse" xml:space="preserve">
+    <value>Byla zde zaparkována vozidla</value>
+  </data>
+  <data name="RegionCentralBohemian" xml:space="preserve">
+    <value>Středočeský kraj</value>
+  </data>
+  <data name="RegionForeign" xml:space="preserve">
+    <value>Zahraničí</value>
+  </data>
+  <data name="RegionHradecKralove" xml:space="preserve">
+    <value>Královéhradecký kraj</value>
+  </data>
+  <data name="RegionKarlovyVary" xml:space="preserve">
+    <value>Karlovarský kraj</value>
+  </data>
+  <data name="RegionLiberec" xml:space="preserve">
+    <value>Liberecký kraj</value>
+  </data>
+  <data name="RegionMoravianSilesian" xml:space="preserve">
+    <value>Moravskoslezský kraj</value>
+  </data>
+  <data name="RegionOlomouc" xml:space="preserve">
+    <value>Olomoucký kraj</value>
+  </data>
+  <data name="RegionOther" xml:space="preserve">
+    <value>Ostatní</value>
+  </data>
+  <data name="RegionPardubice" xml:space="preserve">
+    <value>Pardubický kraj</value>
+  </data>
+  <data name="RegionPlzen" xml:space="preserve">
+    <value>Plzeňský kraj</value>
+  </data>
+  <data name="RegionPrague" xml:space="preserve">
+    <value>Hlavní město Praha</value>
+  </data>
+  <data name="RegionSouthBohemian" xml:space="preserve">
+    <value>Jihočeský kraj</value>
+  </data>
+  <data name="RegionSouthMoravian" xml:space="preserve">
+    <value>Jihomoravský kraj</value>
+  </data>
+  <data name="RegionUstiNadLabem" xml:space="preserve">
+    <value>Ústecký kraj</value>
+  </data>
+  <data name="RegionVysocina" xml:space="preserve">
+    <value>Kraj Vysočina</value>
+  </data>
+  <data name="RegionZlin" xml:space="preserve">
+    <value>Zlínský kraj</value>
+  </data>
+  <data name="Regions" xml:space="preserve">
+    <value>Působnost</value>
+  </data>
+  <data name="Related" xml:space="preserve">
+    <value>Navázané</value>
+  </data>
+  <data name="AllFieldsEmptyErrorMessage" xml:space="preserve">
+    <value>Minimálně jedna hodnota musí být zadána.</value>
+  </data>
+  <data name="CreateStbDivision" xml:space="preserve">
+    <value>Vytvořit nový útvar StB</value>
+  </data>
+  <data name="DeleteStbDivision" xml:space="preserve">
+    <value>Smazat tento útvar StB</value>
+  </data>
+  <data name="StbAdministrationRegisteredPerson" xml:space="preserve">
+    <value>Jako správa StB evidovala osoby</value>
+  </data>
+  <data name="StbAdministrationRegisteredPersonInverse" xml:space="preserve">
+    <value>Byla evidována u správ StB</value>
+  </data>
+  <data name="StbDepartmentRegisteredPerson" xml:space="preserve">
+    <value>Jako odbor StB evidoval osoby</value>
+  </data>
+  <data name="StbDepartmentRegisteredPersonInverse" xml:space="preserve">
+    <value>Byl evidována u odborů StB</value>
+  </data>
+  <data name="StbDivision" xml:space="preserve">
+    <value>Útvar StB</value>
+  </data>
+  <data name="StbDivisionPlural" xml:space="preserve">
+    <value>Útvary StB</value>
+  </data>
+  <data name="AllPropertiesEmptyErrorMessage" xml:space="preserve">
+    <value>Minimálně jedna hodnota musí být vyplněna.</value>
+  </data>
+  <data name="EditStbDivision" xml:space="preserve">
+    <value>Upravit útvar StB</value>
+  </data>
+  <data name="AdvancedSearch" xml:space="preserve">
+    <value>Pokročilé vyhledávání</value>
+  </data>
+  <data name="NewStbDivision" xml:space="preserve">
+    <value>Nový útvar StB</value>
+  </data>
+  <data name="NationalityUnknown" xml:space="preserve">
+    <value>Neznámá</value>
+  </data>
+</root>
